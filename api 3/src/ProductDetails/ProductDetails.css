@@ -1,0 +1,120 @@
+.details{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.back-link{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+.back-link:hover{
+    text-decoration: underline;
+}
+.details-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 28px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-card);
+}
+.details-image{
+    flex: 1 1 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+}
+.details-image img{
+    width: 100%;
+    max-width: 420px;
+    height: 340px;
+    object-fit: contain;
+}
+.details-info{
+    flex: 1 1 320px;
+    min-width: 0;
+}
+.details-category{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+.details-title{
+    margin: 8px 0;
+    font-size: 28px;
+    line-height: 1.25;
+}
+.details-rating{
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-success);
+}
+.details-description{
+    margin: 0 0 16px;
+    color: var(--color-muted);
+    font-size: 16px;
+}
+.details-price{
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+.quantity-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    background-color: var(--color-background);
+    border-radius: 10px;
+}
+.quantity-label{
+    font-size: 15px;
+    font-weight: 600;
+}
+.quantity-controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quantity-value{
+    min-width: 36px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.quantity-controls .btn{
+    padding: 6px 14px;
+    font-size: 16px;
+    line-height: 1;
+}
+.details-info .btn-block + .btn-block{
+    margin-top: 12px;
+}
+@media (max-width: 600px){
+    .details-card{
+        padding: 20px;
+        gap: 20px;
+    }
+    .details-image img{
+        height: 240px;
+    }
+    .details-title{
+        font-size: 22px;
+    }
+}
